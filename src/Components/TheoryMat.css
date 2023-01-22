@@ -1,0 +1,120 @@
+.card_io {
+    width: 700px;
+    height: 254px;
+    margin: 0 auto;
+    background-color: #011522;
+    border-radius: 8px;
+    z-index: 1;
+   }
+   
+   .tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+   }
+   
+   .circle {
+    padding: 0 4px;
+   }
+   
+   .box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+   }
+   
+   .red {
+    background-color: #ff605c;
+   }
+   
+   .yellow {
+    background-color: #ffbd44;
+   }
+   
+   .green {
+    background-color: #00ca4e;
+   }
+
+.videoContainer {
+    background-color: slategray;
+    padding: auto;
+    border-radius: 8px;
+}
+
+.container {
+
+    /* max-width: 600px; */
+    /* height: 500px; */
+    padding: 50px;
+    color: #555;
+}
+
+.container .content {
+    display: block; 
+    margin-top: 20px;
+
+}
+
+.container .content .contentEnglish {
+    display: block;
+}
+.container .content .contentHindi {
+    display: none;
+}
+
+
+.check {
+    position: relative;
+    width: 65px
+}
+
+.check::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 25px;
+    background: #333;
+    border-radius: 25px;
+}
+
+
+
+
+
+.check:checked::before {
+    background: #00a1ff;
+}
+
+
+
+
+.check::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+
+.check:checked::after {
+    left: 35px;
+    border: 2px solid #00a1ff;
+}
+
+
+.check:checked~.content .contentEnglish {
+    display: none;
+}
+
+
+.check:checked~.content .contentHindi {
+    display: block;
+}
